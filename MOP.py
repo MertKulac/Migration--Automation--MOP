@@ -1,6 +1,6 @@
 def layerTwoMop():
-    # baglanti bilgileri
-    backbone = '10.222.247.240'
+
+    backbone = '10.10.10.100'
     row = 1
     user = calisma.username
     pasw = calisma.password
@@ -99,28 +99,17 @@ def layerTwoMop():
 
                 postape(vsi_vpls, fizikselint)
 
-
-
-
             except Exception as e:
                 print(e)
     except Exception as k:
-        print(
-            'Bekciye baglanti saglanamadi! \nSirket agina bagli oldugunuzdan ve giris bilgilerinin dogru oldugundan emin olunuz!')
         print('\n' + '#' * 70)
 
 
 def kullanici():
-    userlar = ['TCABSIVRI', 'TCBAKAPIYOLDAS', 'TCBERDOGAN', 'TCEBAYKOZ', 'TCEMYENIDUNYA', 'TEGHACIBEKTASOGLU', 'TCGCAN',
-               'TCHSELCUK', 'TCOERDUGAN',
-               'TCOBOZKURT', 'TESGOKTAS', 'TCSEASLAN', 'TCTKOCAK', 'TCUSASMAZ', 'EXT02D17652', 'TCSOZKOCUM',
-               'tcoyalcin', 'tcmustafyilmaz', 'TCMUSTAFYILMAZ', 'TCGAKGUN', 'tcgakgun', 'tciyardim', 'TCIYARDIM',
-               'tcbicigen', 'TCBICIGEN']
     yeni_userlar = []
     for u in userlar:
         yeni_userlar.append(u.lower())
     return yeni_userlar
-
 
 def ipbul(a):
     hazirlanan_mop.IP = []
@@ -130,7 +119,6 @@ def ipbul(a):
         if ip:
             pp = ip.string
             hazirlanan_mop.IP.append(pp)
-
 
 def preCheckArp(check):
     check = check.splitlines()
@@ -142,7 +130,6 @@ def preCheckArp(check):
         f.write(row, 0, item)
         row += 1
     return row
-
 
 def arpKontrol(arp):
     arp = arp.splitlines()
