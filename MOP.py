@@ -119,6 +119,7 @@ def ipbul(a):
         if ip:
             pp = ip.string
             hazirlanan_mop.IP.append(pp)
+            #find ip
 
 def preCheckArp(check):
     check = check.splitlines()
@@ -144,6 +145,7 @@ def arpKontrol(arp):
             # print('arp için bitiş satırı : {}'.format(sayac))
             arpbitis = sayac - 1
         sayac = sayac + 1
+        #find arp
 
     arp = arp[arpBaslangic:arpbitis]
     yeniArp = []
@@ -175,6 +177,7 @@ def bgpVrf(vpnins, col):
         f.write(col, 2, b, style)
         f.write(col, 3, "", styleline)
         col += 1
+        #find bgpvrf
 
 
 def vrfYazdir(vrfcikti, coll):
