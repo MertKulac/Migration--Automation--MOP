@@ -5,3 +5,5 @@ import time
 import xlwt
 from PyQt5.QtWidgets import QTextEdit
 import re
+import netmiko
+import schedule
