@@ -1,6 +1,6 @@
 def layerTwoMop():
 
-    backbone = '10.10.10.100'
+    backbone = '10.10.10.10'
     row = 1
     user = calisma.username
     pasw = calisma.password
@@ -308,7 +308,7 @@ def upeInterfaceAyir(intcikti):
 def bekciyeBaglan():
     # baglanti bilgileri
 
-    backbone = '10.222.247.240'
+    backbone = '10.10.10.10'
 
     user = calisma.username
     pasw = calisma.password
@@ -725,8 +725,6 @@ def bekciyeBaglan():
                         for r in intping:
                             f.write(k, 0, r)
                             k = k + 1
-
-
 
             except Exception as e:
                 print(e)
